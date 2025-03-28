@@ -22,14 +22,36 @@
             color: whitesmoke;
           }
 
-          main{
-            margin: auto;
-            background-color: #f7eabc;
-            border-radius: 10px;
-            width: 600px;
-            padding: 10px;
-            box-shadow: 5px 5px 15px 2px rgba(136, 109, 93, 0.616);
+          .container{
+              display:flex;
+              flex-wrap: wrap;
+              font-size:24px;
+              font-weitght: bold;
+              color: white;
           }
+            .produto{
+                background: linear-gradient(to right, #d4a373, #b87c4a);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgbs (0, 0, 0, 2);
+                margin: 10px;
+                padding: 15px;
+                text-align:center;
+                width: 250;
+            }
+
+            .botao{
+                background: linear-gradient (to right, #6d4c41 #8d6e63);
+                color: white;
+                padding: 10px;
+                border:none;
+                cursor: pointer;
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+
+            .botao:hover{
+                background: linear-gradient(to right, #8d6e68, #a1887f);
+            }
           </style>
         <meta charset="utf-8">
 
@@ -37,17 +59,25 @@
 
       <body>
         <header>cantinho da vovó</header>
-        <main>
-        <h1>Veja meus produtos</h1>
-        <div class="produtos">
-        <h2>bolos da vovó</h2>
-        <p>paragrafos 1</p>
-        <p>paragrafos 2</p>
 
-        <h2>tortas da vovó</h2>
+          <div class= "container">
+              
+        <h1>Veja meus produtos</h1>
+              
+        <div class="produtos">
+        <h3>bolos da vovó</h3>
+        <img src="" alt= "bolos da vovó">
+        <p>paragrafos 1</p>
+        <button class="botao">Comprar</button>
+        </div>
+
+              <div class="Produtos">
+        <h3>tortas da vovó</h3>
+        <img src="" alt= "tortas da vovó">
         <p>paragrafos 1</p>
         <p>paragrafos 2</p>
+              </div>
         </div>
-        </main>
+          </div>
       </body>
     </html>
